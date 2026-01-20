@@ -1,13 +1,13 @@
 name: Build
 
+on:
+  pull-request:
+    branches: [main]
+
 defaults:
   run:
     shell: bash
     working-directory: ./client
-
-on:
-  pull-request:
-    branches: [main]
 
 jobs:
   build:
